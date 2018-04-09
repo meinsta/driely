@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 import Rnd from 'react-rnd';
 import { rhythm } from "../utils/typography"
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import MenuClickBg from '../MenuClickBg';
+import MenuClickBg from '../components/MenuClickBg.js';
 
 class Index extends React.Component {
 
