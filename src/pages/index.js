@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 import Rnd from 'react-rnd';
 import { rhythm } from "../utils/typography"
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import MenuExample from '../Components/MenuExample';
+import MenuClickBg from '../MenuClickBg';
 
 class Index extends React.Component {
 
@@ -81,7 +81,7 @@ class Index extends React.Component {
               src={image.node.sizes.src} 
               key={image.node.sizes.src} />
               <MuiThemeProvider>
-                <MenuExample src={image.node.sizes.src} index={images.indexOf(image)} ref={(contextImage) => { image.node.sizes.src = contextImage; }}   />
+                <MenuClickBg src={image.node.sizes.src} index={images.indexOf(image)} ref={(contextImage) => { image.node.sizes.src = contextImage; }}   />
               </MuiThemeProvider> 
           </Rnd>
           ))}
@@ -101,7 +101,7 @@ class Index extends React.Component {
             <li className='image-item' style={styles.column20} key={image.node.resize.src}>
               <img src={image.node.resize.src} />
               <MuiThemeProvider>
-                <MenuExample src={image.node.sizes.src} index={images.indexOf(image)} ref={(contextImage) => { image.node.sizes.src = contextImage; }}   />
+                <MenuClickBg src={image.node.sizes.src} index={images.indexOf(image)} ref={(contextImage) => { image.node.sizes.src = contextImage; }}   />
               </MuiThemeProvider> 
             </li>
           ))}
@@ -138,13 +138,13 @@ class Index extends React.Component {
           <li className="image-item" style={styles.column25}>
             <img src={cropDefault.src} />
               <MuiThemeProvider>
-                <MenuExample src={cropBottomLeft.src}    />
+                <MenuClickBg src={cropBottomLeft.src}    />
               </MuiThemeProvider>
           </li>
           <li className="image-item" style={styles.column25}>
             <img src={cropBottomLeft.src} />
               <MuiThemeProvider>
-                <MenuExample src={cropBottomLeft.src}    />
+                <MenuClickBg src={cropBottomLeft.src}    />
               </MuiThemeProvider> 
             <p>
               <small>
@@ -155,7 +155,7 @@ class Index extends React.Component {
           <li  className="image-item" style={styles.column25}>
             <img src={cropEntropy.src} />
               <MuiThemeProvider>
-                <MenuExample src={cropBottomLeft.src}    />
+                <MenuClickBg src={cropBottomLeft.src}    />
               </MuiThemeProvider> 
             <p>
               <small>
@@ -225,7 +225,7 @@ class Index extends React.Component {
           <div className="span_4 column" style={styles.column20}>
             <Img sizes={sizesDuotoneOriginal} />
               <MuiThemeProvider>
-                <MenuExample src={sizesDuotoneOriginal.src}    />
+                <MenuClickBg src={sizesDuotoneOriginal.src}    />
               </MuiThemeProvider> 
           </div>
           <div className="span_4 column" style={styles.column20}>
