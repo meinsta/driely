@@ -1,4 +1,4 @@
 ## Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/meinsta/driely)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](http://driely.netlify.com/)
 # driely
